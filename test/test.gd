@@ -2,7 +2,6 @@ extends Node2D
 
 func test_data() -> void:
 	print("测试数据开始")
-	#Framework.is_debug = false
 	var framework = Framework.new()
 	var repository = FrameworkRepository.MemoryFrameworkRepository.new()
 	var personService = PersonService.new(repository)
@@ -94,6 +93,6 @@ func test_view():
 	print("测试视图结束")
 	
 func _ready() -> void:
-	#test_data()
+	#Framework.is_debug = false
+	test_data()
 	#test_view()
-	pass
