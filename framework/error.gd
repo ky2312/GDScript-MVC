@@ -8,11 +8,15 @@ enum ErrorStatus {
 }
 
 var message: String
+
 var code: ErrorStatus
+
 var _is_throwed: bool = false
+
 func _init(message: String, code: ErrorStatus = ErrorStatus.inner):
 	self.message = message
 	self.code = code
+
 func throw():
 	if self._is_throwed:
 		return

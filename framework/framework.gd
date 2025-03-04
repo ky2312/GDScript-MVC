@@ -1,4 +1,4 @@
-class_name Framework
+class_name Framework extends RefCounted
 
 static var is_debug: bool = true
 
